@@ -2,6 +2,7 @@
 @import "neat/neat";
 @import "reset";
 @import "base/base";
+@import "mentor-application";
 
 
 $border-grey: #aaacf;
@@ -110,5 +111,26 @@ header {
   h1 {
     position: relative;
     top: -15px;
+  }
+}
+
+
+
+
+#mentor-application {
+  @include span-columns(8 of 12);
+  @include shift(2);
+
+  #application-form-description{
+    background-color:white;
+    padding: 1em;
+    margin-bottom:1em;
+  }
+}
+
+@media (max-width: 480px) {
+  #mentor-application {
+    @include span-columns(12 of 12);
+    @include shift(0);
   }
 }
