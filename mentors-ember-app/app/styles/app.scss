@@ -65,6 +65,9 @@ header {
   }
 }
 
+//
+// Mentor Feed
+//
 .filters {
   @include span-columns(3);
 }
@@ -97,22 +100,18 @@ header {
       @include span-columns(4 of 12);
       @include omega();
     }
+
+    .view-profile {
+      @include span-columns(12 of 12);
+      text-align: center;
+      padding-top: 10px;
+    }
   }
 }
 
-.plus {
-  background-color: $green;
-  color: tint($green, 90%);
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 0px;
-  h1 {
-    position: relative;
-    top: -15px;
-  }
-}
+//
+// Utilities
+//
 
 
 
