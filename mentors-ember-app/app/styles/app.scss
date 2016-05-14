@@ -140,8 +140,6 @@ footer {
       text-align: center;
       padding-top: 10px;
     }
-  }
-}
 
 //
 // Mentor Profile
@@ -213,6 +211,44 @@ footer {
 }
 
 .contact {
+    .view-profile {
+      @include span-columns(12 of 12);
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+}
+
+//
+// Mentor Profile
+//
+.mentor-header {
+  @include outer-container;
+  padding: $small-spacing 0;
+  margin-bottom: $base-spacing;
+
+  h1 { color: shade($blue, 20%) }
+
+  .mentor-avatar {
+    @include span-columns(3 of 12);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .mentor-description {
+    @include span-columns(9 of 12);
+  }
+}
+
+.mentor-details {
+  @include fill-parent();
+  padding: $small-spacing 0;
+}
+
+.mentor-availability {
+  padding: $small-spacing;
   text-align: center;
 }
 
@@ -220,6 +256,7 @@ footer {
 // Home
 //
 .home {
+  color: #fff;
   h1 {
     color: $blue;
     text-align: center;
@@ -232,7 +269,33 @@ footer {
   h4 {
     text-align: center;
     margin-bottom: $base-spacing;
+    margin-bottom: 0px;
   }
+}
+
+.available {
+  background-color: $green;
+}
+
+.not-available {
+  background-color: tint($green, 20%);
+}
+
+.mentor-details-2 {
+  @include span-columns(6 of 12);
+  padding: $base-spacing 0;
+
+  h4 { color: shade($blue, 20%) }
+}
+
+//
+// Utilities
+//
+hr {
+  width: 100%;
+  border: 2px solid $blue;
+  display: block;
+  margin: $base-spacing 0;
 }
 
 .audience {
