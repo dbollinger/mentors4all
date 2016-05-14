@@ -1,0 +1,37 @@
+$light-grey: #f3f5f7;
+$border-grey: #aaacf;
+
+[data-ember-action]{
+  cursor: pointer;
+}
+
+body{
+  background-color: $light-grey;
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  font-family: 'Helvetica Neue';
+  h1{
+    margin: 0;
+    padding: .5em 0;
+    text-align:center;
+    border-bottom: 1px solid #ccc;
+    background-color:white;
+  }
+    .mentor-profile {
+      margin: 1em 2em;
+      padding: 1em;
+      border-bottom: 1px solid #ccc;
+      background-color: white;
+      i{
+        font-size:2em;
+        margin: 0 .5em;
+        vertical-align: middle;
+      }
+      &.is-favorited {
+        background-color: green;
+        color: white;
+      }
+    }
+}

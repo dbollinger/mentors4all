@@ -1,0 +1,13 @@
+<div>
+  <i class="ion-ios-person"></i> {{mentor.first_name}}
+</div>
+
+<button {{action 'addToFavorites'}}>
+  Add to favorites
+</button>
+
+<div>
+ {{#if favorited}}
+  Favorited!
+ {{/if}}
+</div>
