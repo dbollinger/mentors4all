@@ -1,4 +1,9 @@
-$light-grey: #f3f5f7;
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "reset";
+@import "base/base";
+
+
 $border-grey: #aaacf;
 
 [data-ember-action]{
@@ -6,19 +11,19 @@ $border-grey: #aaacf;
 }
 
 body{
-  background-color: $light-grey;
+  background-color: tint($green, 90%);
   width:100%;
   height:100%;
   padding:0;
   margin:0;
-  font-family: 'Helvetica Neue';
-  h1{
-    margin: 0;
-    padding: .5em 0;
-    text-align:center;
-    border-bottom: 1px solid #ccc;
-    background-color:white;
-  }
+  font-family: 'Muli', 'Helvetica Neue', sans-serif;
+  // h1{
+  //   margin: 0;
+  //   padding: .5em 0;
+  //   text-align:center;
+  //   border-bottom: 1px solid #ccc;
+  //   background-color:white;
+  // }
     .mentor-profile {
       margin: 1em 2em;
       padding: 1em;
@@ -34,4 +39,76 @@ body{
         color: white;
       }
     }
+}
+
+//
+// Header
+//
+header {
+  width: 100%;
+  height: 60px;
+  background-color: $blue;
+}
+
+//
+// Mentor Feed
+//
+.page-content {
+  @include outer-container;
+}
+
+.page-header {
+  h1 {
+    color: shade($blue, 20%);
+    padding: $small-spacing 0;
+  }
+}
+
+.filters {
+  @include span-columns(3);
+}
+
+.mentor-list {
+  @include span-columns(9);
+}
+
+.mentor-feed-card {
+  background-color: #fff;
+
+  .mentor-primary-info {
+    .mentor-avatar {
+      @include span-columns(3 of 12);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .mentor-description {
+      @include span-columns(9 of 12);
+    }
+  }
+
+  .mentor-secondary-info {
+    display: inline-block;
+    width: 100%;
+
+    .mentor-info-categories {
+      @include span-columns(4 of 12);
+      @include omega();
+    }
+  }
+}
+
+.plus {
+  background-color: $green;
+  color: tint($green, 90%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 0px;
+  h1 {
+    position: relative;
+    top: -15px;
+  }
 }
