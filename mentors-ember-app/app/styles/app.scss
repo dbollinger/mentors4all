@@ -94,6 +94,9 @@ footer {
 //
 .filters {
   @include span-columns(3);
+
+  h3 { color: shade($blue, 20%) }
+  h4 { color: shade($green, 20%) }
 }
 
 .mentor-list {
@@ -113,6 +116,8 @@ footer {
     }
     .mentor-description {
       @include span-columns(9 of 12);
+
+      h3 { color: shade($blue, 20%) }
     }
   }
 
@@ -123,6 +128,11 @@ footer {
     .mentor-info-categories {
       @include span-columns(4 of 12);
       @include omega();
+
+      .detail-title {
+        margin-bottom: 5px;
+        color: shade($green, 20%);
+      }
     }
 
     .view-profile {
@@ -182,7 +192,56 @@ footer {
   @include span-columns(6 of 12);
   padding: $base-spacing 0;
 
-  h4 { color: shade($blue, 20%) }
+  h4 {
+    color: shade($green, 20%);
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin-bottom: $base-spacing;
+  }
+
+  .day {
+    margin-bottom: 0px;
+    margin-top: $small-spacing;
+    color: $blue;
+  }
+  .time {
+    margin-bottom: 0px;
+    padding-left: $small-spacing;
+  }
+}
+
+.contact {
+  text-align: center;
+}
+
+//
+// Home
+//
+.home {
+  h1 {
+    color: $blue;
+    text-align: center;
+    font-size: 5em;
+    margin-top: $small-spacing;
+
+    .green { color: $green }
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: $base-spacing;
+  }
+}
+
+.audience {
+  @include span-columns(6);
+  text-align: center;
+  margin-bottom: $base-spacing;
+  padding: $small-spacing;
+  border: 2px solid $green;
+  background-color: tint($green, 60%);
 }
 
 //
