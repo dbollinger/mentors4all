@@ -6,6 +6,10 @@ export default Ember.Component.extend({
   classNames: ['mentor-profile'],
 
   actions: {
+    toggleProperty: function(prop){
+      this.toggleProperty(prop);
+    },
+
     addToFavorites: function(){
       this.toggleProperty("favorited");
     }
