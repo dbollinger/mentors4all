@@ -1,9 +1,12 @@
-Apply To Be A Mentor
+<div id="mentor-application">
+    <h3>Apply To Become a Mentor</h3>
+    <section>
+      {{#liquid-if model.submitted}}
+          Thank you for applying! You will be contacted pending the CS4ALL mentor review process.
 
-<form>
-    <label for="name">Name</label>
-    <input id="name" type="text" required>
-    <button type="submti">
-        Submit Form
-    </button>
-</form>
+          Keep learning!
+      {{else}}
+        {{partial 'partials/application-form'}}
+      {{/liquid-if}}
+    </section>
+</div>
