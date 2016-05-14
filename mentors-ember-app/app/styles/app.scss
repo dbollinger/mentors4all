@@ -221,6 +221,7 @@ footer {
 }
 
 .contact {
+  text-align: center;
   .view-profile {
     @include span-columns(12 of 12);
     text-align: center;
