@@ -1,5 +1,7 @@
 class Educator < ActiveRecord::Base
-  has_one :user, as :contactable, dependent: :destroy
+  has_one :user, as: :contactable, dependent: :destroy
+  accepts_nested_attributes_for :user
+
   has_many :educator_subjects
   has_many :cs_subjects, through: :educator_subjects
   has_many :educator_availabilities
