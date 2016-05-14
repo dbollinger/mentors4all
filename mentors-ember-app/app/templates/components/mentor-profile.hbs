@@ -4,8 +4,9 @@
       <img src="http://placehold.it/100x100">
     </div>
     <div class="mentor-description">
-      <h3>{{mentor.firstName}} {{mentor.lastName}}</h3>
-      <p>Threepio! Come in, Threepio! Threepio! Get to the top! I can't Where could he be? Threepio! Threepio, will you come in…</p>
+      <h3>{{mentor.first_name}} {{mentor.last_name}}</h3>
+			<p>{{mentor.prior_experience}}</p>
+      <p>{{mentor.cs_expertise}}</p>
       <p><a href="#" {{action toggleProperty "moreInfo"}}>More Info</a></p>
       <!-- <div {{action toggleProperty "moreInfo"}} class="plus">
         <p>More info</p>
