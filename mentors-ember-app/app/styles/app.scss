@@ -4,19 +4,18 @@
 @import "base/base";
 @import "mentor-application";
 
-
 $border-grey: #aaacf;
 
-[data-ember-action]{
+[data-ember-action] {
   cursor: pointer;
 }
 
-body{
+body {
   background-color: tint($green, 90%);
-  width:100%;
-  height:100%;
-  padding:0;
-  margin:0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: 'Muli', 'Helvetica Neue', sans-serif;
   // h1{
   //   margin: 0;
@@ -25,21 +24,21 @@ body{
   //   border-bottom: 1px solid #ccc;
   //   background-color:white;
   // }
-    .mentor-profile {
-      margin: 1em 2em;
-      padding: 1em;
-      border-bottom: 1px solid #ccc;
-      background-color: white;
-      i{
-        font-size:2em;
-        margin: 0 .5em;
-        vertical-align: middle;
-      }
-      &.is-favorited {
-        background-color: green;
-        color: white;
-      }
+  .mentor-profile {
+    margin: 1em 2em;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    i {
+      font-size: 2em;
+      margin: 0 .5em;
+      vertical-align: middle;
     }
+    &.is-favorited {
+      background-color: green;
+      color: white;
+    }
+  }
 }
 
 //
@@ -95,8 +94,12 @@ footer {
 .filters {
   @include span-columns(3);
 
-  h3 { color: shade($blue, 20%) }
-  h4 { color: shade($green, 20%) }
+  h3 {
+    color: shade($blue, 20%)
+  }
+  h4 {
+    color: shade($green, 20%)
+  }
 }
 
 .mentor-list {
@@ -117,7 +120,9 @@ footer {
     .mentor-description {
       @include span-columns(9 of 12);
 
-      h3 { color: shade($blue, 20%) }
+      h3 {
+        color: shade($blue, 20%)
+      }
     }
   }
 
@@ -141,6 +146,9 @@ footer {
       padding-top: 10px;
     }
 
+  }
+}
+
 //
 // Mentor Profile
 //
@@ -149,7 +157,9 @@ footer {
   padding: $small-spacing 0;
   margin-bottom: $base-spacing;
 
-  h1 { color: shade($blue, 20%) }
+  h1 {
+    color: shade($blue, 20%)
+  }
 
   .mentor-avatar {
     @include span-columns(3 of 12);
@@ -211,11 +221,10 @@ footer {
 }
 
 .contact {
-    .view-profile {
-      @include span-columns(12 of 12);
-      text-align: center;
-      padding-top: 10px;
-    }
+  .view-profile {
+    @include span-columns(12 of 12);
+    text-align: center;
+    padding-top: 10px;
   }
 }
 
@@ -227,7 +236,9 @@ footer {
   padding: $small-spacing 0;
   margin-bottom: $base-spacing;
 
-  h1 { color: shade($blue, 20%) }
+  h1 {
+    color: shade($blue, 20%)
+  }
 
   .mentor-avatar {
     @include span-columns(3 of 12);
@@ -256,20 +267,20 @@ footer {
 // Home
 //
 .home {
-  color: #fff;
   h1 {
     color: $blue;
     text-align: center;
     font-size: 5em;
     margin-top: $small-spacing;
 
-    .green { color: $green }
+    .green {
+      color: $green
+    }
   }
 
   h4 {
     text-align: center;
     margin-bottom: $base-spacing;
-    margin-bottom: 0px;
   }
 }
 
@@ -285,7 +296,9 @@ footer {
   @include span-columns(6 of 12);
   padding: $base-spacing 0;
 
-  h4 { color: shade($blue, 20%) }
+  h4 {
+    color: shade($blue, 20%)
+  }
 }
 
 //
@@ -317,16 +330,14 @@ hr {
   margin: $base-spacing 0;
 }
 
-
-
 #mentor-application {
   @include span-columns(8 of 12);
   @include shift(2);
 
-  #application-form-description{
-    background-color:white;
+  #application-form-description {
+    background-color: white;
     padding: 1em;
-    margin-bottom:1em;
+    margin-bottom: 1em;
   }
 }
 
