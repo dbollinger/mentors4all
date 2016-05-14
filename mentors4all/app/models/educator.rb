@@ -6,4 +6,5 @@ class Educator < ActiveRecord::Base
   has_many :availabilities, through: :educator_availabilities
   has_many :educator_grade_levels
   has_many :grade_levels, through: :educator_grade_levels
+  has_many :mentor_contacts
 end
