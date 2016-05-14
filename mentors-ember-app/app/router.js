@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('mentors', { path: '/mentors' });
+  this.route('mentor', { path: '/mentor/:mentor_id' });
   this.route('overview', { path: '/overview' });
   this.route('apply', { path: '/apply' });
 });
