@@ -115,6 +115,8 @@ footer {
     }
     .mentor-description {
       @include span-columns(9 of 12);
+
+      h3 { color: shade($blue, 20%) }
     }
   }
 
@@ -125,6 +127,11 @@ footer {
     .mentor-info-categories {
       @include span-columns(4 of 12);
       @include omega();
+
+      .detail-title {
+        margin-bottom: 5px;
+        color: shade($green, 20%);
+      }
     }
 
     .view-profile {
@@ -184,7 +191,28 @@ footer {
   @include span-columns(6 of 12);
   padding: $base-spacing 0;
 
-  h4 { color: shade($blue, 20%) }
+  h4 {
+    color: shade($green, 20%);
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin-bottom: $base-spacing;
+  }
+
+  .day {
+    margin-bottom: 0px;
+    margin-top: $small-spacing;
+    color: $blue;
+  }
+  .time {
+    margin-bottom: 0px;
+    padding-left: $small-spacing;
+  }
+}
+
+.contact {
+  text-align: center;
 }
 
 //
