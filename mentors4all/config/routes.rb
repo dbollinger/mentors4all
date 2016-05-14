@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # root 'welcome#index'
   resources :mentors do
-    resources :availability
+    resources :availabilities, only: [:index]
   end
   resources :educators, only: [:new, :create]
   # Example resource route (maps HTTP verbs to controller actions automatically):

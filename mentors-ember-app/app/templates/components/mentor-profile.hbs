@@ -1,0 +1,28 @@
+<div>
+    <i class="ion-ios-person"></i> {{mentor.firstName}} {{mentor.lastName}}
+</div>
+
+<button {{action 'addToFavorites'}}>
+    Add to favorites
+</button>
+
+<div>
+  {{#if favorited}}
+      Favorited!
+  {{/if}}
+</div>
+
+<div {{action toggleProperty "moreInfo"}}>
+    more info
+</div>
+
+{{#liquid-if moreInfo}}
+    <div>
+        This is more info!
+    </div>
+    <div>
+      {{#link-to "mentor" mentor.id}}
+          View full pofile
+      {{/link-to}}
+    </div>
+{{/liquid-if}}
