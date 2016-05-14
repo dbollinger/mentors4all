@@ -47,8 +47,26 @@ body{
 //
 header {
   width: 100%;
-  height: 60px;
-  background-color: $blue;
+  background-color: shade($blue, 50%);
+  padding: $small-spacing;
+
+  .logo {
+    display: inline;
+    font-size: 1.2em;
+    color: $green;
+  }
+
+  nav {
+    display: inline-block;
+    float: right;
+    ul {
+      text-align: right;
+      li {
+        display: inline-block;
+        margin-left: $small-spacing;
+      }
+    }
+  }
 }
 
 //

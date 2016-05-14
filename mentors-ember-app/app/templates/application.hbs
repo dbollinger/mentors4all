@@ -1,9 +1,18 @@
 <header>
-  <h2>mentors4all</h2>
-</header>
-<!-- <h1 id="title">{{#link-to "overview"}}Mentor Connect{{/link-to}}</h1> -->
+  <p class="logo">{{#link-to "overview"}}mentors4all{{/link-to}}</p>
 
- {{liquid-outlet use='toLeft' reverse='toRight'}}
+  <nav>
+    <ul>
+      <li><a href="#">Browse Mentors</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<span class="{{if windowSize.isSmallScreen 'isSmallScreen'}}">
+  {{liquid-outlet use='toLeft' reverse='toRight'}}
+</span>
+
 <footer>
   <p>mentors for all</p>
 </footer>
