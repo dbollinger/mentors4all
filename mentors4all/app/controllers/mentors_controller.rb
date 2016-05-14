@@ -1,6 +1,17 @@
 class MentorsController < ApplicationController
   def index
-    render json: {mentors: Mentor.all}
+    @mentors = Mentor.all
+    mentor_hash = []
+    @mentors.each do |mentor|
+      temp_mentor = mentor.attributes
+      temp_mentor["first_name"] = mentor.user.first_name
+      temp_mentor["last_name"] = mentor.user.last_name
+      temp_mentor["availabilities"] = mentor.availabilities
+      temp_mentor["grade_levels"] = mentor.grade_levels
+      temp_mentor["cs_subjects"] = mentor.cs_subjects
+      mentor_hash << temp_mentor
+    end
+    render json: mentor_hash
   end
 
   def new
