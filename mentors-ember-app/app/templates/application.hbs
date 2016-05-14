@@ -9,10 +9,17 @@
   </nav>
 </header>
 
-<span class="{{if windowSize.isSmallScreen 'isSmallScreen'}}">
-  {{liquid-outlet use='toLeft' reverse='toRight'}}
-</span>
+<div class="page-content">
+  <span class="{{if windowSize.isSmallScreen 'isSmallScreen'}}">
+    {{liquid-outlet use='toLeft' reverse='toRight'}}
+  </span>
+</div>
 
-<footer>
-  <p>mentors for all</p>
-</footer>
+<div class="page-content">
+  <footer>
+    <hr>
+    <p>2016 &copy; Mentors 4 All</p>
+    <p>Made for the <a href="https://hacktothefuture.splashthat.com/">Hack to the Future Hackathon</a> | View on <a href="https://github.com/dbollinger/mentors4all">GitHub</a></p>
+    <p><a href="https://github.com/dbollinger">Drew</a> | <a href="https://github.com/savannahmillion">Savannah</a> | <a href="https://github.com/cgreim">Cat</a> | <a href="https://github.com/andyras">Andrew</a> | <a href="https://github.com/kenworthyc">Caroline</a> | <a href="https://github.com/Katushe">Kathryn</a></p>
+  </footer>
+</div>
