@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     firstName: "Joe",
-    lastName: "Smith"
+    lastName: "Smith",
   }, {
     id: 2,
     firstName: "John",

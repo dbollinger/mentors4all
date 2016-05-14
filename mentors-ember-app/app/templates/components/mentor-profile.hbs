@@ -1,28 +1,39 @@
-<div>
-    <i class="ion-ios-person"></i> {{mentor.firstName}} {{mentor.lastName}}
-</div>
-
-<button {{action 'addToFavorites'}}>
-    Add to favorites
-</button>
-
-<div>
-  {{#if favorited}}
-      Favorited!
-  {{/if}}
-</div>
-
-<div {{action toggleProperty "moreInfo"}}>
-    more info
-</div>
-
-{{#liquid-if moreInfo}}
-    <div>
-        This is more info!
+<div class="mentor-feed-card">
+  <div class="mentor-primary-info">
+    <div class="mentor-avatar">
+      <img src="http://placehold.it/100x100">
     </div>
-    <div>
-      {{#link-to "mentor" mentor.id}}
-          View full pofile
-      {{/link-to}}
+    <div class="mentor-description">
+      <h3>{{mentor.firstName}} {{mentor.lastName}}</h3>
+      <p>Threepio! Come in, Threepio! Threepio! Get to the top! I can't Where could he be? Threepio! Threepio, will you come in…</p>
+      <p><a href="#" {{action toggleProperty "moreInfo"}}>More Info</a></p>
+      <!-- <div {{action toggleProperty "moreInfo"}} class="plus">
+        <p>More info</p>
+      </div> -->
     </div>
-{{/liquid-if}}
+  </div>
+
+  <div class="mentor-secondary-info">
+    {{#liquid-if moreInfo}}
+        <div class="mentor-info-categories">
+          <p>GRADES</p>
+          <ul>
+            <li>K-2</li>
+            <li>3-5</li>
+            <li>6-8</li>
+          </ul>
+        </div>
+        <div class="mentor-info-categories">
+          <p>CHICAGO AREA</p>
+        </div>
+        <div class="mentor-info-categories">
+          <p>WEEKLY AVAILABILITY</p>
+        </div>
+        <div class="view-profile">
+          {{#link-to "mentor" mentor.id}}
+              <input type="submit" value="View Profile">
+          {{/link-to}}
+        </div>
+    {{/liquid-if}}
+  </div>
+</div>
