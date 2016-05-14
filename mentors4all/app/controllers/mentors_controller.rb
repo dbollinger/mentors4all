@@ -16,6 +16,14 @@ class MentorsController < ApplicationController
   end
 
   def show
+    @mentor = Mentor.find(params[:id])
+    render json: {mentor: @mentor}
+  end
+
+  def update
+    @mentor = Mentor.find(params[:id])
+    @mentor.update_attributes(mentor_params)
+
     render json: {mentor: @mentor}
   end
 
