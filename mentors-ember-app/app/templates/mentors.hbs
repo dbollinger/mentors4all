@@ -1,4 +1,29 @@
-<h3>List of mentors</h3>
-{{#each model as |mentor|}}
-    {{mentor-profile mentor=mentor}}
-{{/each}}
+<div class="page-content">
+  <div class="page-header">
+    <h1>Available Mentors</h1>
+  </div>
+  <div class="filters">
+    <h3>Filters</h3>
+    <div class="filter-category">
+      <fieldset>
+        <form>
+          <label><h4>Chicago Area</h4></label>
+          <label><input type="checkbox" class="checkbox">Southside</label>
+          <label><input type="checkbox" class="checkbox">Northside</label>
+        </form>
+      </fieldset>
+      <fieldset>
+        <form>
+          <label><h4>Grades</h4></label>
+          <label><input type="checkbox" class="checkbox">Southside</label>
+          <label><input type="checkbox" class="checkbox">Northside</label>
+        </form>
+      </fieldset>
+    </div>
+  </div>
+  <div class="mentor-list">
+    {{#each model as |mentor|}}
+        {{mentor-profile mentor=mentor}}
+    {{/each}}
+  </div>
+</div>
