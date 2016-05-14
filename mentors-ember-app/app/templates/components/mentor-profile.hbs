@@ -16,7 +16,7 @@
   <div class="mentor-secondary-info">
     {{#liquid-if moreInfo}}
         <div class="mentor-info-categories">
-          <p>GRADES</p>
+          <p class="detail-title">Grades</p>
           <ul>
             <li>K-2</li>
             <li>3-5</li>
@@ -24,10 +24,19 @@
           </ul>
         </div>
         <div class="mentor-info-categories">
-          <p>CHICAGO AREA</p>
+          <p class="detail-title">Chicago Area</p>
+          <ul>
+            <li>North side</li>
+            <li>South side</li>
+          </ul>
         </div>
         <div class="mentor-info-categories">
-          <p>WEEKLY AVAILABILITY</p>
+          <p class="detail-title">Weekday Availability</p>
+          <ul>
+            <li>Monday</li>
+            <li>Wednesday</li>
+            <li>Friday</li>
+          </ul>
         </div>
         <div class="view-profile">
           {{#link-to "mentor" mentor.id}}

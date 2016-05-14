@@ -4,19 +4,18 @@
 @import "base/base";
 @import "mentor-application";
 
-
 $border-grey: #aaacf;
 
-[data-ember-action]{
+[data-ember-action] {
   cursor: pointer;
 }
 
-body{
+body {
   background-color: tint($green, 90%);
-  width:100%;
-  height:100%;
-  padding:0;
-  margin:0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: 'Muli', 'Helvetica Neue', sans-serif;
   // h1{
   //   margin: 0;
@@ -25,21 +24,21 @@ body{
   //   border-bottom: 1px solid #ccc;
   //   background-color:white;
   // }
-    .mentor-profile {
-      margin: 1em 2em;
-      padding: 1em;
-      border-bottom: 1px solid #ccc;
-      background-color: white;
-      i{
-        font-size:2em;
-        margin: 0 .5em;
-        vertical-align: middle;
-      }
-      &.is-favorited {
-        background-color: green;
-        color: white;
-      }
+  .mentor-profile {
+    margin: 1em 2em;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    i {
+      font-size: 2em;
+      margin: 0 .5em;
+      vertical-align: middle;
     }
+    &.is-favorited {
+      background-color: green;
+      color: white;
+    }
+  }
 }
 
 //
@@ -94,6 +93,13 @@ footer {
 //
 .filters {
   @include span-columns(3);
+
+  h3 {
+    color: shade($blue, 20%)
+  }
+  h4 {
+    color: shade($green, 20%)
+  }
 }
 
 .mentor-list {
@@ -113,6 +119,10 @@ footer {
     }
     .mentor-description {
       @include span-columns(9 of 12);
+
+      h3 {
+        color: shade($blue, 20%)
+      }
     }
   }
 
@@ -123,6 +133,11 @@ footer {
     .mentor-info-categories {
       @include span-columns(4 of 12);
       @include omega();
+
+      .detail-title {
+        margin-bottom: 5px;
+        color: shade($green, 20%);
+      }
     }
 
     .view-profile {
@@ -130,6 +145,7 @@ footer {
       text-align: center;
       padding-top: 10px;
     }
+
   }
 }
 
@@ -141,7 +157,9 @@ footer {
   padding: $small-spacing 0;
   margin-bottom: $base-spacing;
 
-  h1 { color: shade($blue, 20%) }
+  h1 {
+    color: shade($blue, 20%)
+  }
 
   .mentor-avatar {
     @include span-columns(3 of 12);
@@ -182,7 +200,105 @@ footer {
   @include span-columns(6 of 12);
   padding: $base-spacing 0;
 
-  h4 { color: shade($blue, 20%) }
+  h4 {
+    color: shade($green, 20%);
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin-bottom: $base-spacing;
+  }
+
+  .day {
+    margin-bottom: 0px;
+    margin-top: $small-spacing;
+    color: $blue;
+  }
+  .time {
+    margin-bottom: 0px;
+    padding-left: $small-spacing;
+  }
+}
+
+.contact {
+  .view-profile {
+    @include span-columns(12 of 12);
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+//
+// Mentor Profile
+//
+.mentor-header {
+  @include outer-container;
+  padding: $small-spacing 0;
+  margin-bottom: $base-spacing;
+
+  h1 {
+    color: shade($blue, 20%)
+  }
+
+  .mentor-avatar {
+    @include span-columns(3 of 12);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .mentor-description {
+    @include span-columns(9 of 12);
+  }
+}
+
+.mentor-details {
+  @include fill-parent();
+  padding: $small-spacing 0;
+}
+
+.mentor-availability {
+  padding: $small-spacing;
+  text-align: center;
+}
+
+//
+// Home
+//
+.home {
+  h1 {
+    color: $blue;
+    text-align: center;
+    font-size: 5em;
+    margin-top: $small-spacing;
+
+    .green {
+      color: $green
+    }
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: $base-spacing;
+  }
+}
+
+.available {
+  background-color: $green;
+}
+
+.not-available {
+  background-color: tint($green, 20%);
+}
+
+.mentor-details-2 {
+  @include span-columns(6 of 12);
+  padding: $base-spacing 0;
+
+  h4 {
+    color: shade($blue, 20%)
+  }
 }
 
 //
@@ -195,17 +311,33 @@ hr {
   margin: $base-spacing 0;
 }
 
+.audience {
+  @include span-columns(6);
+  text-align: center;
+  margin-bottom: $base-spacing;
+  padding: $small-spacing;
+  border: 2px solid $green;
+  background-color: tint($green, 60%);
+}
 
-
+//
+// Utilities
+//
+hr {
+  width: 100%;
+  border: 2px solid $blue;
+  display: block;
+  margin: $base-spacing 0;
+}
 
 #mentor-application {
   @include span-columns(8 of 12);
   @include shift(2);
 
-  #application-form-description{
-    background-color:white;
+  #application-form-description {
+    background-color: white;
     padding: 1em;
-    margin-bottom:1em;
+    margin-bottom: 1em;
   }
 }
 
