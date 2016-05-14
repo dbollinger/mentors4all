@@ -1,0 +1,41 @@
+<form {{action 'submitApplication' on='submit'}}>
+    <fieldset>
+
+        <label for="name">First Name</label>
+        <input id="name" type="text" required>
+
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" required>
+
+        <label for="email-address">Email Address</label>
+        <input id="email-address" type="text" required>
+
+        <label for="available-locations">Available Locations</label>
+        <input type="checkbox" name="vehicle" value="Bike"> South Side Schools <br/>
+        <input type="checkbox" name="vehicle" value="Car"> Southwest Side Schools <br/>
+        <input type="checkbox" name="vehicle" value="Car"> West Side Schools<br/>
+        <input type="checkbox" name="vehicle" value="Car"> Northwest Side Schools<br/>
+        <input type="checkbox" name="vehicle" value="Car"> North Side Schools<br/>
+        <input type="checkbox" name="vehicle" value="Car"> City Center<br/>
+
+        <label for="available-locations">I would like to work with students in these grades</label>
+        <input type="checkbox" name="vehicle" value="Car"> Kindergarten-2 <br/>
+        <input type="checkbox" name="vehicle" value="Car"> 3-5<br/>
+        <input type="checkbox" name="vehicle" value="Car"> 6-8<br/>
+
+        <label for="available-locations">I am generally available during the following times</label>
+        <input type="checkbox" name="vehicle" value="Car"> Kindergarten-2 <br/>
+        <input type="checkbox" name="vehicle" value="Car"> 3-5<br/>
+        <input type="checkbox" name="vehicle" value="Car"> 6-8<br/>
+
+        <label for="available-locations">What is your current occupation?</label>
+        <input type="checkbox" name="vehicle" value="Car"> Student <br/>
+        <input type="checkbox" name="vehicle" value="Car"> Educator <br/>
+        <input type="checkbox" name="vehicle" value="Car"> Professional <br/>
+        <input type="checkbox" name="vehicle" value="Car"> Unprofessional <br/>
+
+        <button type="submit">
+            Submit Form
+        </button>
+    </fieldset>
+</form>
