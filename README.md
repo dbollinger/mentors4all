@@ -11,10 +11,9 @@ CS4All piloted a successful mentoring program to aid these students and teachers
 The barriers between getting these mentors to schools in need are largely administrative; there are mentor applications to review, approve, and background checks to make, schedules to match, and more. In its first iteration, **mentors4all matches CPS educators and programming mentors based on location, schedule, and area of expertise**— shortening the process so that under-served classrooms get CS mentors.
 
 ### developers
-- [Andy Rasmussen](https://github.com/andyras), product manager
-- [Cat Greim](https://github.com/cgreim), product manager // designer
-- [Savannah Million](https://github.com/savannahmillion), designer // front-end dev
 - [Drew Bollinger](https://github.com/dbollinger), front-end dev
 - [Kathryn Garbacz](https://github.com/katushe), back-end dev
+- [Cat Greim](https://github.com/cgreim), product manager // designer
 - [Caroline Kenworthy](https://github.com/kenworthyc), back-end dev
-
+- [Savannah Million](https://github.com/savannahmillion), designer // front-end dev
+- [Andy Rasmussen](https://github.com/andyras), product manager
